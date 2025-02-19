@@ -260,15 +260,6 @@ float[] rotateVector(float[] vectorIn, quat qIn) {
   return vOut;
 }
 
-void clearScreen() {
-  fill(0);
-  pushMatrix();
-  translate(0, 0, -1000);
-  rect(-1000, -1000, 10000, 10000);
-  popMatrix();
-  fill(100);
-  pushMatrix();
-  translate(height/2, width/2, 0);
-  sphere(3);
-  popMatrix();
+void clearScreen(){
+  background(0);
 }
